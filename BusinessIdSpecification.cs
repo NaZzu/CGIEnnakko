@@ -1,9 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
-using System.Text;
-using System.Text.RegularExpressions;
-
-
+using System.Collections.Generic;
 
 
 public class BusinessIdSpecification : ISpecification<string>
@@ -17,6 +12,7 @@ public class BusinessIdSpecification : ISpecification<string>
 
     }
 
+
     public IEnumerable<string> ReasonsForDissatisfaction
     {
         get
@@ -25,6 +21,7 @@ public class BusinessIdSpecification : ISpecification<string>
         }
     }
 
+
     public IEnumerable<string> ControlMarkDissaatisfaction
     {
         get
@@ -32,7 +29,6 @@ public class BusinessIdSpecification : ISpecification<string>
             return errorsControl;
         }
     }
-
 
 
     public bool IsControlOk(string entity)
@@ -48,8 +44,6 @@ public class BusinessIdSpecification : ISpecification<string>
     }
 
 
-
-
     public bool IsSatisfiedBy(string entity)
     {
         Validator validator = new Validator(entity);
@@ -60,7 +54,5 @@ public class BusinessIdSpecification : ISpecification<string>
         }
         else
         return true;              
-    }
-
-    
+    }    
 }
