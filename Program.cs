@@ -1,4 +1,3 @@
-﻿using System.Collections.Generic;
 using System;
 
 namespace KoodailuCshrp
@@ -9,7 +8,6 @@ namespace KoodailuCshrp
 
         static void Main(string[] args)
         {
-
             Console.WriteLine("type exit to exit");
             while (true)
             {
