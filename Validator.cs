@@ -1,9 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
-using System.Linq;
-
-
-
+using System.Collections.Generic;
 
 
 
@@ -46,7 +41,7 @@ public class Validator
     {
         if (entity.Length > 7)
         {
-            errorsDigit.Add("Your BusinessID is too long, is it an imaginary business perhaps?");
+            errorsDigit.Add("Your BusinessID is too long, a typo or an imaginary business?");
         }
         else if (entity.Length < 7)
         {
@@ -64,6 +59,7 @@ public class Validator
         }
     }
 
+
     public void ControlLength()
     {
         if (entity.Length != 1)
@@ -71,6 +67,7 @@ public class Validator
             errorsControl.Add("Control mark can only contain 1 number.");
         }
     }
+
 
     public void ControlNumberOnly()
     {
@@ -80,7 +77,6 @@ public class Validator
             errorsControl.Add("Unless you have an imaginary business, control mark has to be a number");
         }
     }
-
 }
 
 
