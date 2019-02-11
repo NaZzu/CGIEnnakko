@@ -53,7 +53,7 @@ namespace KoodailuCshrp
                 Console.Clear();
                 Console.WriteLine("You typed a correct BusinessID!");
                 Console.WriteLine("Well done lad, press any key to exit");
-                Console.ReadLine();
+                Console.ReadKey();
                 break;
                 }
             }
