@@ -2,8 +2,6 @@
 
 
 
-
-
     public interface ISpecification<in TEntity>
 
     {
